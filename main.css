@@ -28,6 +28,26 @@ a:hover{
     color: gold;
 }
 /*jimmy*/
+
+.logo{
+    height: 50px;
+    width: auto;
+}
+.link{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.link div p{
+    font-size: 25px;
+    color: white;
+}
+.domo{
+    display: flex;
+}
 .jcenter{
     background-image: url("image/homeback.jpg");
 }
@@ -51,7 +71,6 @@ a:hover{
     outline: none;
 }
 .jinputatelier:active{
-    font-size: 25px;
     outline: none;
 }
 #j1{
@@ -68,12 +87,6 @@ a:hover{
 }
 #j5{
     background-color: darkgreen;
-}
-.link{
-    background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 #imgca1{
     height: 350px;
