@@ -1,0 +1,93 @@
+body{
+    border-style: solid;
+    box-shadow: 0px 0px 15px 15px rgba(211, 211, 211, 0.9);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-image: url("image/background.png");
+}
+
+header{
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding-top: 1px;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-bottom: 2px solid black;
+}
+.flooter{
+    background-color: rgba(245, 245, 245, 0.6);
+    border-top: 2px solid black;
+}
+.link{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    font-size: 200%;
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: gold;
+}
+span{
+    margin-left: 10px;
+}
+footer{
+    background-color: rgba(245, 245, 245, 0.6);
+    border-top: 2px solid black;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    font-family: "American Typewriter";
+}
+.named{
+    height: 80px;
+    width: auto;
+}
+.send{
+    margin-top: 2%;
+    font-size: 130%;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.coding {
+    height: auto;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.contact div img{
+  height: 125px;
+  width: auto;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+    margin-top: 2%;
+}
+
+
+.contact_input{
+  display: flex;
+  justify-content: center;
+    margin-bottom: 3%;
+}
+
+.contact_line{
+  border-style: solid;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+}
