@@ -1,0 +1,60 @@
+body{
+    border-style: solid;
+    box-shadow: 0px 0px 15px 15px rgba(211, 211, 211, 0.9);
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-image: url("image/background.png");
+}
+
+header{
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    padding-top: 1px;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-bottom: 2px solid black;
+}
+
+footer{
+    background-color: rgba(245, 245, 245, 0.6);
+    border-top: 2px solid black;
+}
+
+span{
+    margin-left: 10px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-family: "American Typewriter";
+}
+.name{
+    height: 80px;
+    width: auto;
+}
+
+.center{
+    background-color: rgba(245, 245, 245, 0.3);
+}
+.primary{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 6%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.coding {
+    height: auto;
+    width: 50%;
+    margin-left: 20%;
+}
