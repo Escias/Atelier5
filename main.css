@@ -6,12 +6,12 @@ body{
 
 header{
     padding-top: 1px;
-    background-color: rgba(245, 245, 245, 0.6);
+    background-image: url("image/background.jpg");
     border-bottom: 2px solid black;
 }
 
 footer{
-    background-color: rgba(245, 245, 245, 0.6);
+    background-image: url("image/background.jpg");
     border-top: 2px solid black;
 }
 
@@ -28,9 +28,8 @@ a:hover{
     color: gold;
 }
 /*jimmy*/
-
 .logo{
-    height: 50px;
+    height: 38px;
     width: auto;
 }
 .link{
@@ -38,27 +37,26 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 1%;
     padding-left: 5%;
     padding-right: 5%;
 }
-.link div p{
+.nom{
     font-size: 25px;
     color: white;
 }
 .domo{
     display: flex;
-}
-.jcenter{
-    background-image: url("image/homeback.jpg");
+    align-items: center;
 }
 .jtitre{
     padding-top: 2%;
-    padding-bottom: 15%;
+    padding-bottom: 37%;
     display: flex;
     justify-content: center;
 }
 .jtitre img{
-    height: 250px;
+    height: 350px;
     width: auto;
 }
 .jatelier{
@@ -88,39 +86,18 @@ a:hover{
 #j5{
     background-color: darkgreen;
 }
-#imgca1{
-    height: 350px;
-    width: 200px;
-}
-#imgca2{
-    height: 350px;
-    width: 200px;
-}
-#imgca3{
-    height: 350px;
-    width: 200px;
-}
-#carousel{
+
+.carousel{
     border-top: 10px solid;
     border-bottom: 10px solid;
 }
 /*jimmy*/
 
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 250%;
-    font-family: "American Typewriter";
-}
 .name{
     height: 80px;
     width: auto;
 }
 
-.jcenter{
-    background-color: rgba(245, 245, 245, 0.3);
-}
 .primary{
     display: flex;
     align-items: center;
@@ -138,4 +115,79 @@ a:hover{
     height: auto;
     width: 50%;
     margin-left: 20%;
+}
+.carousel-item img{
+    height: 745px;
+    width: 6000px;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 5%;
+    border-style: solid;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.contact{
+    color: black;
+}
+
+.drop{
+    color: dodgerblue;
+}
+
+
+.cont{
+}
+
+.cont .btn {
+    position: relative;
+    z-index: 1;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
 }
