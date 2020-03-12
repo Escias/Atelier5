@@ -1,0 +1,97 @@
+/*Titre*/
+#colorTitre{
+  /*Font-size : white;*/
+font-size: 400%;
+display: flex;
+justify-content: space-around;
+}
+
+/*Fond Style*/
+body{
+background-image: url(img/back.png);
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+/*Présentation Style*/
+.textPhotoHall{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 194px;
+  margin-right: 168px;
+  margin-top: 252px;
+  justify-content: space-between;
+}
+.postionRéseau{
+display: flex;
+flex-direction: column;
+height: 4%;
+}
+.tailleLogo{
+height: 75px;
+}
+.colorW{
+  color: red;
+}
+/* --Archive--
+.textPhotoHall{
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+
+.photo{
+left: 118px;
+}
+.textHall{
+
+}
+.tailleLogo{
+height: 100px;
+}
+.cursorNo{
+  cursor: not-allowed;
+  height: 100px;
+}
+#photoya{
+  width: 318px;
+  position: relative;
+  top: 100px;
+  right: 0px;
+}
+#textP{
+position: relative;
+top: -490px;
+}
+#textYao{
+position: relative;
+top: 85px;
+left: 105px;
+}
+article div #postionRéseau{
+
+}
+#textLai{
+
+}
+article div #postionRéseau{
+
+}
+#textNicod{
+position: relative;
+}
+article div #postionRéseau{
+display: flex;
+flex-direction: column;
+}
+#devClement{
+
+}
+
+/*Bas Page Style*/
+#barPage{
+
+}
+#versionPage{
+
+}
