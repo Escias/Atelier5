@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
@@ -10,7 +10,7 @@
 <body>
 <header class="link">
     <div>
-        <a href="main.html" class="domo"><img class="logo" src="image/domoimage.png"><p class="nom">JavaDomo</p></a>
+        <a href="main.html" class="domo"><img class="logo" src="image/domoimage.png"><h1 class="nom">JavaDomo</h1></a>
     </div>
     <div>
         <div class="dropdown">
@@ -38,7 +38,7 @@
         </div>
         <span></span>
         <span class="spanlink"></span>
-        <a href="">Team</a>
+        <a href="team.html" class="team">Team</a>
         <span class="spanlink"></span>
     </div>
 </header>
@@ -69,11 +69,12 @@
                         <img src="image/javadomologo.png">
                     </div>
                     <div class="jatelier">
-                        <input class="jinputatelier" id="j1" type="submit" value="Atelier 1" onclick="workshop(1)">
-                        <input class="jinputatelier" id="j2" type="submit" value="Atelier 2" onclick="workshop(2)">
-                        <input class="jinputatelier" id="j3" type="submit" value="Atelier 3" onclick="workshop(3)">
-                        <input class="jinputatelier" id="j4" type="submit" value="Atelier 4" onclick="workshop(4)">
-                        <input class="jinputatelier" id="j5" type="submit" value="Atelier 5" onclick="workshop(5)">
+                        <input class="jinputatelier" id="j1" type="submit" value="Liste des Projets" onclick="workshop(1)">
+                        <input class="jinputatelier" id="j2" type="submit" value="Atelier 1" onclick="workshop(2)">
+                        <input class="jinputatelier" id="j3" type="submit" value="Atelier 2" onclick="workshop(3)">
+                        <input class="jinputatelier" id="j4" type="submit" value="Atelier 3" onclick="workshop(4)">
+                        <input class="jinputatelier" id="j5" type="submit" value="Atelier 4" onclick="workshop(5)">
+                        <input class="jinputatelier" id="j6" type="submit" value="Atelier 5" onclick="workshop(6)">
                     </div>
                 </div>
 
@@ -85,11 +86,35 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </section>
-
-<section>
-
+<section class="document" id="document">
+    <div id="doc">
+        <h2>Atelier 3</h2>
+        <div class="content" id="block1">
+            <img id="doc1" src="image/java-swing.jpg">
+            <div class="left">
+                <h3 onclick="workshop(2)">Application Java - Swing</h3>
+                <p>L'atelier 3 consiste à créer une application permettant la gestion de la base de données (et des différents capteurs utilisés lors du projet).<br>
+                Le tout avec le langage de programmation <a class="lien" href="#java">Java</a>, avec la bibliothèque graphique <a class="lien" href="#swing">Swing</a>.</p>
+            </div>
+        </div>
+        <div class="content" id="block2">
+            <div class="right">
+                <h3 id="java">Java</h3>
+                <p>phpMyAdmin est une application de gestion de base de données MySQL<br>
+                    C'est également l'application que nous avons utilisé pour créer notre base de donnée avec <a class="lien" href="#mysql">MySQL</a>.</p>
+            </div>
+            <img id="doc2" src="image/Java-Logo.jpg">
+        </div>
+        <div class="content" id="block3">
+            <img id="doc3" src="image/mysql.jpg">
+            <div class="left">
+                <h3 id="swing">Swing</h3>
+                <p>MySQL est un système de gestion de base de données, basé sur le langage SQL<br>
+                    <a href="" class="golien">Ici</a>, la base de données a été réaliser en utilisant ce langage.</p>
+            </div>
+        </div>
+    </div>
 </section>
-
 <footer>
     <div class="footer">
         <div>
