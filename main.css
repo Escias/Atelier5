@@ -1,11 +1,9 @@
 body{
-    background-image: url("image/background.png");
+
 }
 
 header{
-    padding-top: 1px;
-    background-image: url("image/background.jpg");
-    border-bottom: 2px solid black;
+background-color: #faf6f6;
 }
 
 footer{
@@ -35,6 +33,100 @@ a:hover {
     color: dodgerblue;
     text-decoration-line: underline;
 }
+
+/*Top Page*/
+.carousel{
+    border-bottom: 10px solid;
+}
+.jtitre{
+    padding-top: 2%;
+    padding-bottom: 37%;
+    display: flex;
+    justify-content: center;
+}
+.jatelier{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 655px;
+    margin-right: -840px;
+  }
+.carré{
+  height: 150px;
+  width: 150px;
+  background: #5d7963;
+  -webkit-transform: rotate(0deg);
+  position: absolute;
+  left: 135px;
+  top: 355px;
+}
+#nameBy{
+  position: absolute;
+  left: 210px;
+  top: 405px;
+  color: white;
+  font: bold 12px Verdana;
+  font-size: 30px;
+}
+#semoLogo{
+    height: 600px;
+    position: absolute;
+    left: 915px;
+}
+  #j1{ /*Amélioration en cours bouton menu pricipal*/
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  box-shadow: 1px 1px 3px #999;
+  background-color: #5d7963;
+  }
+  #j2{
+border-radius: 12px 0 12px 0;
+border: none;
+color: #555;
+font: bold 12px Verdana;
+padding: 6px 0 6px 0;
+box-shadow: 1px 1px 3px #999;
+background-color: #5d7963;
+  }
+  #j3{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: #555;
+    font: bold 12px Verdana;
+    padding: 6px 0 6px 0;
+    box-shadow: 1px 1px 3px #999;
+    background-color: #5d7963;
+  }
+  #j4{
+  border-radius: 12px 0 12px 0;
+    border: none;
+    color: #555;
+    font: bold 12px Verdana;
+    padding: 6px 0 6px 0;
+    box-shadow: 1px 1px 3px #999;
+    background-color: #5d7963;
+  }
+  #j5{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: #555;
+    font: bold 12px Verdana;
+    padding: 6px 0 6px 0;
+    box-shadow: 1px 1px 3px #999;
+    background-color: #5d7963;
+  }
+  #j6{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: #555;
+    font: bold 12px Verdana;
+    padding: 6px 0 6px 0;
+    box-shadow: 1px 1px 3px #999;
+    background-color: #5d7963;
+  }
 /*jimmy*/
 .logo{
     position: relative;
@@ -58,20 +150,9 @@ a:hover {
 .domo{
     display: flex;
 }
-.jtitre{
-    padding-top: 2%;
-    padding-bottom: 37%;
-    display: flex;
-    justify-content: center;
-}
 .jtitre img{
     height: 350px;
     width: auto;
-}
-.jatelier{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .jinputatelier{
     font-size: 20px;
@@ -80,28 +161,8 @@ a:hover {
 .jinputatelier:active{
     outline: none;
 }
-#j1{
-    background-color: red;
-}
-#j2{
-    background-color: cornflowerblue;
-}
-#j3{
-    background-color: yellowgreen;
-}
-#j4{
-    background-color: antiquewhite;
-}
-#j5{
-    background-color: darkgreen;
-}
-#j6{
-    background-color: yellow;
-}
-.carousel{
-    border-top: 10px solid;
-    border-bottom: 10px solid;
-}
+
+
 /*jimmy*/
 
 .name{
@@ -129,7 +190,8 @@ a:hover {
 }
 .carousel-item img{
     height: 745px;
-    width: 6000px;
+    width: 35%!important;
+    margin-left: 210px;
 }
 
 .dropbtn {
