@@ -37,6 +37,7 @@ a:hover {
 /*Top Page*/
 .carousel{
     border-bottom: 10px solid;
+    color: #faf6f6;
 }
 .jtitre{
     padding-top: 2%;
@@ -60,6 +61,14 @@ a:hover {
   left: 135px;
   top: 355px;
 }
+.transition{
+  height: 5px;
+  width: 2114px;
+  background: #545454;
+  position: absolute;
+  top: 764px;
+
+}
 #nameBy{
   position: absolute;
   left: 210px;
@@ -74,59 +83,119 @@ a:hover {
     left: 915px;
 }
   #j1{ /*Amélioration en cours bouton menu pricipal*/
-  border-radius: 12px 0 12px 0;
-  border: none;
-  color: #555;
-  font: bold 12px Verdana;
-  padding: 6px 0 6px 0;
-  box-shadow: 1px 1px 3px #999;
-  background-color: #5d7963;
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: #555;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    height: 55px;
   }
+  #j1:hover{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: white;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    background-color: #5d7963;
+    height: 55px;
+}
   #j2{
-border-radius: 12px 0 12px 0;
-border: none;
-color: #555;
-font: bold 12px Verdana;
-padding: 6px 0 6px 0;
-box-shadow: 1px 1px 3px #999;
-background-color: #5d7963;
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: #555;
+    font: bold 12px Verdana;
+    padding: 6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    height: 35px;
   }
+  #j2:hover{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: white;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    background-color: #5d7963;
+    height: 55px;
+}
   #j3{
     border-radius: 12px 0 12px 0;
     border: none;
     color: #555;
     font: bold 12px Verdana;
     padding: 6px 0 6px 0;
-    box-shadow: 1px 1px 3px #999;
-    background-color: #5d7963;
+    box-shadow: 5px -1px 3px #999;
+    height: 35px;
   }
+  #j3:hover{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: white;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    background-color: #5d7963;
+    height: 55px;
+}
   #j4{
   border-radius: 12px 0 12px 0;
-    border: none;
-    color: #555;
-    font: bold 12px Verdana;
-    padding: 6px 0 6px 0;
-    box-shadow: 1px 1px 3px #999;
-    background-color: #5d7963;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  height: 35px;
   }
+  #j4:hover{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: white;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    background-color: #5d7963;
+    height: 55px;
+}
   #j5{
     border-radius: 12px 0 12px 0;
     border: none;
     color: #555;
     font: bold 12px Verdana;
     padding: 6px 0 6px 0;
-    box-shadow: 1px 1px 3px #999;
-    background-color: #5d7963;
+    box-shadow: 5px -1px 3px #999;
+    height: 35px;
   }
+  #j5:hover{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: white;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    background-color: #5d7963;
+    height: 55px;
+}
   #j6{
     border-radius: 12px 0 12px 0;
     border: none;
     color: #555;
     font: bold 12px Verdana;
     padding: 6px 0 6px 0;
-    box-shadow: 1px 1px 3px #999;
-    background-color: #5d7963;
+    box-shadow: 5px -1px 3px #999;
+    height: 35px;
   }
+  #j6:hover{
+    border-radius: 12px 0 12px 0;
+    border: none;
+    color: white;
+    font: bold 12px Verdana;
+    padding: -6px 0 6px 0;
+    box-shadow: 5px -1px 3px #999;
+    background-color: #5d7963;
+    height: 55px;
+}
 /*jimmy*/
 .logo{
     position: relative;
