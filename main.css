@@ -81,22 +81,16 @@ a:hover {
     outline: none;
 }
 #j1{
-    background-color: red;
+    background-color: white;
 }
 #j2{
-    background-color: cornflowerblue;
+    background-color: white;
 }
 #j3{
-    background-color: yellowgreen;
+    background-color: white;
 }
 #j4{
-    background-color: antiquewhite;
-}
-#j5{
-    background-color: darkgreen;
-}
-#j6{
-    background-color: yellow;
+    background-color: white;
 }
 .carousel{
     border-top: 10px solid;
@@ -165,7 +159,9 @@ a:hover {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -208,38 +204,75 @@ a:hover {
     text-decoration-line: underline;
 }
 .document{
-    background-image: url("image/docback.jpg");
+    background-image: url("image/whiteback.jpg");
     background-size: 100%;
     padding: 3%;
 }
 
-.content{
+.appli{
+    height: 40%;
+    width: 40%;
+}
+.doc{
+    display: flex;
+    flex-direction: column;
+}
+.doctitle{
+    display: flex;
+    justify-content: center;
+}
+.docdesc{
+    display: flex;
+    justify-content: center;
+}
+.docdet{
+    display: flex;
+    justify-content: center;
+}
+.doccontent{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 2%;
 }
-.content img{
-    height: 250px;
-    width: 350px;
-    border: 6px solid grey;
+.docopt{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
-.content img:hover{
-    cursor: none;
-    box-shadow: 0px 0px 15px 15px rgba(21, 244, 238, 0.9);
+.imgdoc{
+    box-shadow: 0px 0px 5px 5px black;
+    height: 30%;
+    width: 30%;
+    margin: 1%;
 }
-.content div{
-    margin-right: 10%;
-    margin-left: 10%;
+.imgdoc:hover{
+    box-shadow: 0px 0px 5px 5px deepskyblue;
+    height: 30%;
+    width: 30%;
+    margin: 1%;
 }
-.content div h3{
-    color: white;
-    margin-left: 5%;
+.imgdoc:active{
+    outline: none;
 }
-.content div h3:hover{
-    cursor: pointer;
-    text-decoration-line: underline;
+.download{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    border-color: blue;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    background-color: white;
+    font-size: 100%;
+    color: black;
 }
-.content div p{
-    color: white;
+.download:hover{
+    text-decoration-line: none;
+}
+.section{
+    padding-top: 3%;
+    padding-bottom: 2%;
 }
