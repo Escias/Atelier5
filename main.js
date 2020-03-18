@@ -1,117 +1,156 @@
-var brut1 = "<div id=\"doc\">\n" +
-    "        <h2>Visualisation des ateliers</h2>\n" +
-    "        <div class=\"content\" id=\"block1\">\n" +
-    "            <img id=\"doc1\" src=\"image/LARP.png\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(2)\">Atelier 1</h3>\n" +
-    "                <p>Initiation au code via des algorithmes réalisés sur le logiciel LARP, sur windows XP.</p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block2\">\n" +
-    "            <div class=\"right\">\n" +
-    "                <h3 onclick=\"workshop(3)\">Atelier 2</h3>\n" +
-    "                <p>Création de la base de données qui servira tout au long du projet. <br>\n" +
-    "                Cette base de données a été créée avec le langage MySQL et l'utilisation de l'outils phpMyAdmin.</p>\n" +
-    "            </div>\n" +
-    "            <img id=\"doc2\" src=\"image/phpmyadmin.jpg\">\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block3\">\n" +
-    "            <img id=\"doc3\" src=\"image/java-swing.jpg\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(4)\">Atelier 3</h3>\n" +
-    "                <p>Création d'une application en JAVA avec la bibliothèque graphique SWING permettant la gestion de la base de données (et des différents capteurs utilisés lors du projet). </p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block4\">\n" +
-    "            <div id=\"doc4\" class=\"right\">\n" +
-    "                <h3 onclick=\"workshop(5)\">Atelier 4</h3>\n" +
-    "                <p>Refonte complète de l'application de l'Atelier 3 tout en gardant les même objectifs.</p>\n" +
-    "            </div>\n" +
-    "            <img id=\"doc5\" src=\"image/java-swing.jpg\">\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block5\">\n" +
-    "            <img src=\"image/HtmlCssJs.png\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(6)\">Atelier 5</h3>\n" +
-    "                <p>Mise en place d'un site vitrine afin de présenter plus en détails le projet, ses membres, et pour les contacter.</p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>";
-
-var larp = "<div id=\"doc\">\n" +
-    "        <h2>Atelier 1</h2>\n" +
-    "        <div class=\"content\" id=\"block1\">\n" +
-    "            <img id=\"doc1\" src=\"image/LARP.png\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(2)\">LARP</h3>\n" +
-    "                <p>L'atelier 1 consiste à appréhender la logique de programmation à l'aide d'algorithmes réalisés sur le logiciel LARP, sur windows XP, installé sur MacOS via une machine virtuelle, dans notre cas, VirtualBox.<br>\n" +
-    "                Le travail effectué ce divise en deux partie, le <a class=\"lien\" href=\"#pseudo\">pseudo code</a> et les <a class=\"lien\" href=\"#logi\">logigrammes</a></p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block2\">\n" +
-    "            <div class=\"right\">\n" +
-    "                <h3 id=\"pseudo\">Pseudo-code</h3>\n" +
-    "                <p>le pseudo-code est une façon de décrire un algorithme sans référence à un langage de programmation en particulier.<br>\n" +
-    "                    <a href=\"\" class=\"golien\">Ici</a> , nous avons réaliser 15 exercices en pseudo-code sur LARP.</p>\n" +
-    "            </div>\n" +
-    "            <img id=\"doc2\" src=\"image/LARP/pseudo-code/LARP%2008.png\">\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block3\">\n" +
-    "            <img id=\"doc3\" src=\"image/LARP/logigramme/LARP%2007.png\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 id=\"logi\">Logigramme</h3>\n" +
-    "                <p>Un logigramme (ou organigramme de programmation) est une représentation graphique normalisée de l'enchaînement des opérations et des décisions effectuées par un programme d'ordinateur.<br>\n" +
-    "                    <a href=\"\" class=\"golien\">Ici</a> , nous avons réaliser 12 exercices en logigrammes sur LARP.</p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>";
-
-var bdd = "<div id=\"doc\">\n" +
-    "        <h2>Atelier 2</h2>\n" +
-    "        <div class=\"content\" id=\"block1\">\n" +
-    "            <img id=\"doc1\" src=\"image/phpmyadmin.jpg\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(2)\">Base de données</h3>\n" +
-    "                <p>L'atelier 2 consiste à créer la base de données qui servira tout au long du projet.<br>\n" +
-    "                Cette base de données est créer avec <a class=\"lien\" href=\"#phpmyadmin\">MySQL</a>, en utlisant l'application <a class=\"lien\" href=\"#mysql\">phpMyAdmin</a>.</p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block2\">\n" +
-    "            <div class=\"right\">\n" +
-    "                <h3 id=\"phpmyadmin\">phpMyAdmin</h3>\n" +
-    "                <p>phpMyAdmin est une application de gestion de base de données MySQL<br>\n" +
-    "                    C'est également l'application que nous avons utilisé pour créer notre base de donnée avec <a class=\"lien\" href=\"#mysql\">MySQL</a>.</p>\n" +
-    "            </div>\n" +
-    "            <img id=\"doc2\" src=\"image/phpmyadmin-logo.jpg\">\n" +
-    "        </div>\n" +
-    "        <div class=\"content\" id=\"block3\">\n" +
-    "            <img id=\"doc3\" src=\"image/mysql.jpg\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 id=\"mysql\">MySQL</h3>\n" +
-    "                <p>MySQL est un système de gestion de base de données, basé sur le langage SQL<br>\n" +
-    "                    <a href=\"\" class=\"golien\">Ici</a>, la base de données a été réaliser en utilisant ce langage.</p>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
-    "    </div>";
-
 function workshop(n){
     console.log(n);
     switch (n) {
         case 1:
-            document.getElementById("document").innerHTML = brut1;
+            document.getElementById("document").innerHTML = "<article class=\"doc\" id=\"doc\">\n" +
+                "        <div class=\"doctitle\">\n" +
+                "            <h1 class=\"text\">JavaDomo</h1>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdesc\">\n" +
+                "            <h3 class=\"text\">Application de gestion domotique de la maison</h3>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdet\">\n" +
+                "            <p class=\"text\">JavaDomo est un projet d'une application de gestion domotique de domiciles.</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"text\">L'application permet la gestion de plusieurs domiciles.<br>\n" +
+                "                Grâce à cette application, plus besoin de ce déplacer à travers tout le domicile pour vérifier un à un les informations essentiels.<br>\n" +
+                "                JavaDomo vous donne accès à l'ensemble des appareils pour gérer votre domicile,<br>\n" +
+                "                tel que les lumières, les caméras, les thermomètres, ou encore obtenir des information sur les denrées alimentaires présente.<br>\n" +
+                "                Grâce à cette application intuitive, vous contrôlez votre système à distance facilement, où que vous soyez. </p>\n" +
+                "            <input class=\"imgdoc\" id=\"smart\" type=\"image\" src=\"image/smarthouse.jpg\" onclick=\"fullscreen('smart')\">\n" +
+                "        </div>\n" +
+                "        <a class=\"download\" href=\"file/JavaDomo.jar\" download>Télécharger (&#x26A0;bêta ver. 0.7)</a>\n" +
+                "        <div class=\"docopt\">\n" +
+                "            <p>Plus de détails sont disponible via les autres sections disponible plus haut</p>\n" +
+                "        </div>\n" +
+                "    </article>";
             break;
         case 2:
-            document.getElementById("document").innerHTML = larp;
+            document.getElementById("document").innerHTML = "<article class=\"doc\" id=\"doc\">\n" +
+                "        <div class=\"doctitle\">\n" +
+                "            <h1 class=\"text\">Documentation</h1>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdesc\">\n" +
+                "            <h3 class=\"text\">Développement de l'application</h3>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdet\">\n" +
+                "            <p class=\"text\">JavaDomo à été développer avec le langage de programmation Java et sa bibliothèque graphique Swing.</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"text\">Java est un langage de programmation orienté objet.<br>\n" +
+                "                L'intégralité du code ayant permis le développement de l'application a été réalisé avec ce langage,<br>\n" +
+                "                associé avec un peu de code MySQL pour le lié à sa base de données.</p>\n" +
+                "            <input class=\"imgdoc\" id=\"javalogo\" type=\"image\" src=\"image/javalogo.jpg\" onclick=\"fullscreen('javalogo')\">\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <input class=\"imgdoc\" id=\"swing\" type=\"image\" src=\"image/java-swing.png\" onclick=\"fullscreen('swing')\">\n" +
+                "            <p>Swing est une bibliothèque graphique du langage de programmation Java.<br>\n" +
+                "                Elle a permis la création de tout le côté visuel de l'application,<br>\n" +
+                "                c'est à dire, toute l'interface visible.</p>\n" +
+                "        </div>\n" +
+                "        <a class=\"download\" href=\"document.html\">Documentation détaillée</a>\n" +
+                "    </article>";
             break;
         case 3:
-            document.getElementById("document").innerHTML = bdd;
+            document.getElementById("document").innerHTML = " <article class=\"doc\" id=\"doc\">\n" +
+                "        <div class=\"doctitle\">\n" +
+                "            <h1 class=\"text\">Manuel d'utilisation</h1>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdesc\">\n" +
+                "            <h3 class=\"text\">Guide de démarrage</h3>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdet\">\n" +
+                "            <p class=\"text\">Ce guide vous donne les information nécessaire sur les principales fonctions de JavaDomo</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"text\">Pour commencer à utiliser l'application,<br>\n" +
+                "                connecter vous avec votre compte utilisateur (ou inscrivez-vous si vous n'en possédez pas).</p>\n" +
+                "            <input class=\"imgdoc\" id=\"connexion\" type=\"image\" src=\"image/appli/connexion.png\" onclick=\"fullscreen('connexion')\">\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <input class=\"imgdoc\" id=\"profil\" type=\"image\" src=\"image/appli/profil.png\" onclick=\"fullscreen('profil')\">\n" +
+                "            <p>Dans la section \"profile\",<br>\n" +
+                "            Vous avez accès à toutes les information essentiel vous concernant.<br>\n" +
+                "            Vous pouvez également y modifier vos information personnel et votre mot de passe, ou supprimer votre compte.</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"section\">Section \"Management\"</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p>Dans la section \"Item management\",<br>\n" +
+                "            Vous avez accès à toutes les informations récoltées par vos appareils en choisissant<br>\n" +
+                "                la rubrique souhaitée et en validant avec \"Select Table\",<br>\n" +
+                "            Vous pouvez également y supprimer l'information sélectionner avec \"Delete selected Item\"<br>\n" +
+                "                <br>\n" +
+                "            (Il vous est également possible de visualiser les photos pris par vos caméras)</p>\n" +
+                "            <input class=\"imgdoc\" id=\"gestion\" type=\"image\" src=\"image/appli/gestion.png\" onclick=\"fullscreen('gestion')\">\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <input class=\"imgdoc\" id=\"maj\" type=\"image\" src=\"image/appli/maj.png\" onclick=\"fullscreen('maj')\">\n" +
+                "            <p>Dans le section \"Update Item\",<br>\n" +
+                "            Vous pouvez visualisez toutes les informations et les modifier.<br>\n" +
+                "            Pour modifier une information, sélectionner la ligne concerné et la colonne que vous souhaité modifier,<br>\n" +
+                "            et modifier l'info souhaité, puis validé avec \"Update selected item\".</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p>Dans la section \"Add Item\",<br>\n" +
+                "            Vous pouvez ajouter de nouveau appareil (ou de nouvelles informations).<br>\n" +
+                "            Pour ce faire, sélectionner la rubrique, complété les cases requises et validé avec \"Validate\".</p>\n" +
+                "            <input class=\"imgdoc\" id=\"ajout\" type=\"image\" src=\"image/appli/ajout.png\" onclick=\"fullscreen('ajout')\">\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"section\">(&#x26A0;Par mesure de sécurité, certaines informations ne peuvent être supprimer, modifier ou encore ajouter.)</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"docopt\">\n" +
+                "            <p>Pour plus de renseignement, ou si vous rencontrez un problème, merci de nous contacter via le formulaire de contact.</p>\n" +
+                "        </div>\n" +
+                "    </article>";
             break;
         case 4:
-
-            break;
-        case 5:
-            break;
-        case 6:
+            document.getElementById("document").innerHTML = "<article class=\"doc\" id=\"doc\">\n" +
+                "        <div class=\"doctitle\">\n" +
+                "            <h1 class=\"text\">Gestion du projet</h1>\n" +
+                "        </div>\n" +
+                "        <div class=\"docdesc\">\n" +
+                "            <h3 class=\"text\">Méthode de travail</h3>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"section\">Gestion du travail</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"text\">le travail a été réparti selon les compétences de chacun<br>\n" +
+                "            Les différentes tâches ont été reparti de manière à ce que chaque sprint du projet soit fini dans les temps.<br>\n" +
+                "            De ces faits, la quantité de travail de chacun n'a pas été la même.</p>\n" +
+                "            <input class=\"imgdoc\" id=\"trello\" type=\"image\" src=\"image/trello.png\" onclick=\"fullscreen('trello')\">\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p class=\"section\">Méthode Agile et Scrum</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <input class=\"imgdoc\" id=\"agile\" type=\"image\" src=\"image/agile.png\" onclick=\"fullscreen('agile')\">\n" +
+                "            <p>La méthode Agile est un groupes de pratiques de pilotage et de réalisation de projets.<br>\n" +
+                "            Elle permet une plus grande implication du client, une meilleur communication en les équipe de développement et les clients<br>\n" +
+                "            et ainsi une meilleurs réactivité<br>\n" +
+                "                La méthode Agile met l'accent sur le travail d'équipe et l'individualité de chacun</p>\n" +
+                "        </div>\n" +
+                "        <div class=\"doccontent\">\n" +
+                "            <p>La méthodologie Scrum permet un approche plus rapide et flexible du développement.<br>\n" +
+                "                Elle suit les principes de la méthodologie Agile, c'est-à-dire l'implication et la participation active du client tout au long du projet.<br>\n" +
+                "                équipe Scrum est auto-organisée et pluridisciplinaire, c'est-à-dire qu'elle choisit la meilleure façon d’accomplir son travail et qu'elle possède toutes les compétences nécessaires à l'accomplissement du projet.<br>\n" +
+                "                La flexibilité, la créativité et la productivité de l'équipe sont ainsi optimisées.</p>\n" +
+                "            <input class=\"imgdoc\" id=\"scrum\" type=\"image\" src=\"image/scrum.jpg\" onclick=\"fullscreen('scrum')\">\n" +
+                "        </div>\n" +
+                "        <a class=\"download\" href=\"https://agilemanifesto.org/iso/fr/manifesto.html\" target=\"_blank\">Manifeste Agile</a>\n" +
+                "    </article>";
             break;
     }
 }
+
+function fullscreen(a){
+    if (document.getElementById(a).requestFullscreen) {
+        document.getElementById(a).requestFullscreen();
+    }
+}
+
+
