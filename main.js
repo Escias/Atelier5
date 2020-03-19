@@ -44,23 +44,30 @@ var brut1 = "<div id=\"doc\">\n" +
     "    </div>";
 
 var larp = "<div id=\"doc\">\n" +
-    "        <h2>Atelier 1</h2>\n" +
+    "           <div id=\"blockArp1\"></div>\n"+
+    "        <h2 class=\"titreA\">Atelier 1</h2>\n" +
     "        <div class=\"content\" id=\"block1\">\n" +
+    "         <p>1</p>\n" +
+    "           <div id=\"carréA\"></div>\n" +
     "            <img id=\"doc1\" src=\"image/LARP.png\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(2)\">LARP</h3>\n" +
-    "                <p>L'atelier 1 consiste à appréhender la logique de programmation à l'aide d'algorithmes réalisés sur le logiciel LARP, sur windows XP, installé sur MacOS via une machine virtuelle, dans notre cas, VirtualBox.<br>\n" +
-    "                Le travail effectué ce divise en deux partie, le <a class=\"lien\" href=\"#pseudo\">pseudo code</a> et les <a class=\"lien\" href=\"#logi\">logigrammes</a></p>\n" +
+    "            <div id=\"arpText1\">\n" +
+    "                <h3 id=\"TitreArp1\" onclick=\"workshop(2)\">LARP</h3>\n" +
+    "                <p>L'atelier 1 consiste à appréhender la <br> logique de programmation à l'aide <br> d'algorithmes réalisés sur le logiciel <br> LARP, sur windows XP, installé sur <br> MacOS via une machine virtuelle, dans notre cas, VirtualBox.<br>\n" +
+    "                Le travail effectué ce divise en deux partie,<br> le <a class=\"lien\" href=\"#pseudo\">pseudo code</a> et les <a class=\"lien\" href=\"#logi\">logigrammes</a></p>\n" +
     "            </div>\n" +
     "        </div>\n" +
+    "            <div id=\"transitionArp1\"></div>\n"+
+    "           <div id=\"blockArp2\"></div>\n"+
     "        <div class=\"content\" id=\"block2\">\n" +
-    "            <div class=\"right\">\n" +
-    "                <h3 id=\"pseudo\">Pseudo-code</h3>\n" +
-    "                <p>le pseudo-code est une façon de décrire un algorithme sans référence à un langage de programmation en particulier.<br>\n" +
-    "                    <a href=\"\" class=\"golien\">Ici</a> , nous avons réaliser 15 exercices en pseudo-code sur LARP.</p>\n" +
+    "            <div id=\"arpText2\">\n" +
+    "                <h3 id=\"TitreArp2\">Pseudo-code</h3>\n" +
+    "                <p id=\"para1\">le pseudo-code est une façon de <br> décrire un algorithme sans <br> référence à un langage de programmation en particulier.<br>\n" +
+    "                    <a href=\"\" class=\"golien\">Ici</a> ,<br> nous avons réaliser 15 exercices en pseudo-code sur LARP.</p>\n" +
     "            </div>\n" +
+    "           <div id=\"blockArp22\"></div>\n"+
     "            <img id=\"doc2\" src=\"image/LARP/pseudo-code/LARP%2008.png\">\n" +
     "        </div>\n" +
+    "            <div id=\"transitionArp2\"></div>\n"+
     "        <div class=\"content\" id=\"block3\">\n" +
     "            <img id=\"doc3\" src=\"image/LARP/logigramme/LARP%2007.png\">\n" +
     "            <div class=\"left\">\n" +

@@ -56,7 +56,6 @@ a:hover {
   height: 150px;
   width: 150px;
   background: #5d7963;
-  -webkit-transform: rotate(0deg);
   position: absolute;
   left: 135px;
   top: 355px;
@@ -197,7 +196,10 @@ height: 35px;
   height: 55px;
 }
 
-/*mid*/
+/*mid - Liste Projet*/
+#TitreArp1 h3{
+  font-size: 4.75rem;
+}
 .document{
   display: flex;
   flex-direction: column;
@@ -205,12 +207,7 @@ height: 35px;
   padding: 3%;
   background-color: #faf6f6;
 }
-/*.content div{
-    margin-right: 24%;
-    margin-left: -4%;
-}*/
 .content div h3{
-    color: #5d7963;
     margin-left: 5%;
 }
 .content div h3:hover{
@@ -224,7 +221,6 @@ height: 35px;
 }
 .content div p{
   font: small-caps bold 24px/1 sans-serif;
-    color: #5d7963;
 }
 .docR{
   position: relative;
@@ -289,6 +285,94 @@ height: 35px;
 #leftT1{
   position: relative;
   right: 470px;
+}
+
+/*Mid - Atelier1*/
+#blockArp1{
+  height: 785px;
+  width: 613px;
+  background: #5d7963;
+  position: absolute;
+  left: 1500px;
+  top: 769px;
+}
+#TitreArp1{
+  position: relative;
+  top: -115px;
+  left: 135px;
+  font-size: 100px;
+}
+#arpText1{
+  color: white;
+  position: relative;
+  left: 300px;
+}
+#doc1{
+  height: 500px;
+  width: auto;
+}
+#carréA{
+  height: 150px;
+  width: 150px;
+  background: #5d7963;
+  position: absolute;
+  left: 160px;
+}
+#transitionArp1{
+  height: 5px;
+  width: 2188px;
+  background: #545454;
+  position: absolute;
+  top: 1550px;
+  left: -75px;
+}
+#blockArp2{
+  height: 785px;
+  width: 613px;
+  background: #5d7963;
+  margin-top: 122px;
+  margin-left: -63px;
+}
+#blockArp22{
+  height: 179px;
+  width: 613px;
+  background: #5d7963;
+  position: absolute;
+  left: 0px;
+  top: 2341px;
+}
+#TitreArp2{
+  position: relative;
+  top: -335px;
+  right: 670px;
+  font-size: 70px;
+  color: white;
+}
+#arpText2{
+  position: relative;
+  left: 565px;
+  top: -290px;
+}
+#para1{
+  color: #5d7963;
+  position: relative;
+  left: 300px;
+  font-size: 34px;
+}
+#doc2{
+  height: auto;
+  width: 1162px;
+  position: relative;
+  top: -720px;
+  right: 100px;
+}
+#transitionArp2{
+  height: 5px;
+  width: 2188px;
+  background: #545454;
+  position: absolute;
+  top: 2520px;
+  left: -75px;
 }
 /*jimmy*/
 .logo{
