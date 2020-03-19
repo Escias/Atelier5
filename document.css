@@ -114,6 +114,26 @@ a:hover {
     margin-left: 20%;
 }
 
-section{
-    background-image: url("image/whiteback.jpg");
+.code{
+    border-style: solid;
+    background-color: black;
+    margin-top: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.codecolor{
+    color: white;
+}
+
+.detail{
+    margin-left: 10%;
+}
+u{
+    color: crimson;
+}
+.sep{
+    border-top: 5px solid black;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border-bottom: 5px solid black;
 }
