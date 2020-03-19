@@ -82,14 +82,14 @@ a:hover {
     position: absolute;
     left: 915px;
 }
-  #j1{ /*Amélioration en cours bouton menu pricipal*/
-    border-radius: 12px 0 12px 0;
-    border: none;
-    color: #555;
-    font: bold 12px Verdana;
-    padding: -6px 0 6px 0;
-    box-shadow: 5px -1px 3px #999;
-    height: 55px;
+#j1{
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: -6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  height: 55px;
   }
   #j1:hover{
     border-radius: 12px 0 12px 0;
@@ -101,14 +101,14 @@ a:hover {
     background-color: #5d7963;
     height: 55px;
 }
-  #j2{
-    border-radius: 12px 0 12px 0;
-    border: none;
-    color: #555;
-    font: bold 12px Verdana;
-    padding: 6px 0 6px 0;
-    box-shadow: 5px -1px 3px #999;
-    height: 35px;
+#j2{
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  height: 35px;
   }
   #j2:hover{
     border-radius: 12px 0 12px 0;
@@ -120,14 +120,14 @@ a:hover {
     background-color: #5d7963;
     height: 55px;
 }
-  #j3{
-    border-radius: 12px 0 12px 0;
-    border: none;
-    color: #555;
-    font: bold 12px Verdana;
-    padding: 6px 0 6px 0;
-    box-shadow: 5px -1px 3px #999;
-    height: 35px;
+#j3{
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  height: 35px;
   }
   #j3:hover{
     border-radius: 12px 0 12px 0;
@@ -139,14 +139,14 @@ a:hover {
     background-color: #5d7963;
     height: 55px;
 }
-  #j4{
-  border-radius: 12px 0 12px 0;
-  border: none;
-  color: #555;
-  font: bold 12px Verdana;
-  padding: 6px 0 6px 0;
-  box-shadow: 5px -1px 3px #999;
-  height: 35px;
+#j4{
+border-radius: 12px 0 12px 0;
+border: none;
+color: #555;
+font: bold 12px Verdana;
+padding: 6px 0 6px 0;
+box-shadow: 5px -1px 3px #999;
+height: 35px;
   }
   #j4:hover{
     border-radius: 12px 0 12px 0;
@@ -158,14 +158,14 @@ a:hover {
     background-color: #5d7963;
     height: 55px;
 }
-  #j5{
-    border-radius: 12px 0 12px 0;
-    border: none;
-    color: #555;
-    font: bold 12px Verdana;
-    padding: 6px 0 6px 0;
-    box-shadow: 5px -1px 3px #999;
-    height: 35px;
+#j5{
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  height: 35px;
   }
   #j5:hover{
     border-radius: 12px 0 12px 0;
@@ -177,24 +177,118 @@ a:hover {
     background-color: #5d7963;
     height: 55px;
 }
-  #j6{
-    border-radius: 12px 0 12px 0;
-    border: none;
-    color: #555;
-    font: bold 12px Verdana;
-    padding: 6px 0 6px 0;
-    box-shadow: 5px -1px 3px #999;
-    height: 35px;
+#j6{
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: #555;
+  font: bold 12px Verdana;
+  padding: 6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  height: 35px;
   }
-  #j6:hover{
-    border-radius: 12px 0 12px 0;
-    border: none;
-    color: white;
-    font: bold 12px Verdana;
-    padding: -6px 0 6px 0;
-    box-shadow: 5px -1px 3px #999;
-    background-color: #5d7963;
-    height: 55px;
+#j6:hover{
+  border-radius: 12px 0 12px 0;
+  border: none;
+  color: white;
+  font: bold 12px Verdana;
+  padding: -6px 0 6px 0;
+  box-shadow: 5px -1px 3px #999;
+  background-color: #5d7963;
+  height: 55px;
+}
+
+/*mid*/
+.document{
+  display: flex;
+  flex-direction: column;
+  background-size: 100%;
+  padding: 3%;
+  background-color: #faf6f6;
+}
+/*.content div{
+    margin-right: 24%;
+    margin-left: -4%;
+}*/
+.content div h3{
+    color: #5d7963;
+    margin-left: 5%;
+}
+.content div h3:hover{
+    cursor: pointer;
+    text-decoration-line: underline;
+
+}
+.content img{
+    height: 250px;
+    width: 350px;
+}
+.content div p{
+  font: small-caps bold 24px/1 sans-serif;
+    color: #5d7963;
+}
+.docR{
+  position: relative;
+  right: 310px;
+}
+.left{
+  position: relative;
+  right: 580px;
+}
+.docL{
+  position: relative;
+  left: 300px;
+}
+.right{
+  position: relative;
+  left: 565px;
+}
+#transitionPR1{
+  height: 10px;
+  width: 1100px;
+  background: #5d7963;
+  position: absolute;
+  top: 184px;
+  left: -625px;
+}
+#transitionPR2{
+  height: 10px;
+  width: 1165px;
+  background: #5d7963;
+  position: absolute;
+  top: 1365px;
+  left: 949px;
+}
+#transitionPR3{
+  height: 10px;
+  width: 1165px;
+  background: #5d7963;
+  position: absolute;
+  top: 1658px;
+  right: 950px;
+}
+#transitionPR4{
+  height: 10px;
+  width: 1165px;
+  background: #5d7963;
+  position: absolute;
+  top: 1950px;
+  left: 949px;
+}
+#transitionPR5{
+  height: 10px;
+  width: 1165px;
+  background: #5d7963;
+  position: absolute;
+  top: 2230px;
+  left: -75px;
+}
+#docL1{
+  position: relative;
+  left: -245px;
+}
+#leftT1{
+  position: relative;
+  right: 470px;
 }
 /*jimmy*/
 .logo{
@@ -338,39 +432,13 @@ a:hover {
     color: white;
     text-decoration-line: underline;
 }
-.document{
-    background-image: url("image/docback.jpg");
-    background-size: 100%;
-    padding: 3%;
-}
-
 .content{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 2%;
 }
-.content img{
-    height: 250px;
-    width: 350px;
-    border: 6px solid grey;
-}
 .content img:hover{
     cursor: none;
     box-shadow: 0px 0px 15px 15px rgba(21, 244, 238, 0.9);
-}
-.content div{
-    margin-right: 10%;
-    margin-left: 10%;
-}
-.content div h3{
-    color: white;
-    margin-left: 5%;
-}
-.content div h3:hover{
-    cursor: pointer;
-    text-decoration-line: underline;
-}
-.content div p{
-    color: white;
 }
