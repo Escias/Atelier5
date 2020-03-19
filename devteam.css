@@ -172,3 +172,6 @@ a:hover {
     border: solid white;
     padding: 0.7%;
 }
+#jim{
+    rotation: 90deg;
+}
