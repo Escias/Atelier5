@@ -1,40 +1,45 @@
 var brut1 = "<div id=\"doc\">\n" +
-    "        <h2>Visualisation des ateliers</h2>\n" +
+    "        <!--<h2>Visualisation des ateliers</h2>-->\n" +
     "        <div class=\"content\" id=\"block1\">\n" +
-    "            <img id=\"doc1\" src=\"image/LARP.png\">\n" +
+    "            <img class=\"docR\" src=\"image/LARP.png\">\n" +
     "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(2)\">Atelier 1</h3>\n" +
-    "                <p>Initiation au code via des algorithmes réalisés sur le logiciel LARP, sur windows XP.</p>\n" +
+    "                <h3 onclick=\"workshop(2)\">ATELIER 1</h3>\n" +
+    "                <p>Initiation au code via des <br> algorithmes réalisés sur le logiciel <br> LARP, sur windows XP.</p>\n" +
+    "            <div id=\"transitionPR1\"></div>\n"+
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"content\" id=\"block2\">\n" +
     "            <div class=\"right\">\n" +
-    "                <h3 onclick=\"workshop(3)\">Atelier 2</h3>\n" +
-    "                <p>Création de la base de données qui servira tout au long du projet. <br>\n" +
-    "                Cette base de données a été créée avec le langage MySQL et l'utilisation de l'outils phpMyAdmin.</p>\n" +
+    "                <h3 onclick=\"workshop(3)\">ATELIER 2</h3>\n" +
+    "                <p>Création de la base de données qui <br> servira tout au long du projet. <br>\n" +
+    "                Cette base de données a été<br> créée avec le langage<br> MySQL et l'utilisation de l'outils phpMyAdmin.</p>\n" +
     "            </div>\n" +
-    "            <img id=\"doc2\" src=\"image/phpmyadmin.jpg\">\n" +
+    "            <img class=\"docL\" src=\"image/phpmyadmin.jpg\">\n" +
+    "            <div id=\"transitionPR2\"></div>\n"+
     "        </div>\n" +
     "        <div class=\"content\" id=\"block3\">\n" +
-    "            <img id=\"doc3\" src=\"image/java-swing.jpg\">\n" +
-    "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(4)\">Atelier 3</h3>\n" +
-    "                <p>Création d'une application en JAVA avec la bibliothèque graphique SWING permettant la gestion de la base de données (et des différents capteurs utilisés lors du projet). </p>\n" +
+    "            <img id=\"docL1\" src=\"image/java-swing.jpg\">\n" +
+    "            <div id=\"leftT1\">\n" +
+    "                <h3 onclick=\"workshop(4)\">ATELIER 3</h3>\n" +
+    "                <p>Création d'une application en JAVA <br> avec la bibliothèque graphique SWING <br> permettant  la gestion de la base de données <br> (et des différents capteurs utilisés lors du projet). </p>\n" +
     "            </div>\n" +
+    "            <div id=\"transitionPR3\"></div>\n"+
     "        </div>\n" +
     "        <div class=\"content\" id=\"block4\">\n" +
     "            <div id=\"doc4\" class=\"right\">\n" +
-    "                <h3 onclick=\"workshop(5)\">Atelier 4</h3>\n" +
-    "                <p>Refonte complète de l'application de l'Atelier 3 tout en gardant les même objectifs.</p>\n" +
+    "                <h3 onclick=\"workshop(5)\">ATELIER 4</h3>\n" +
+    "                <p>Refonte complète de l'application de <br> l'Atelier 3 tout en gardant les même <br> objectifs.</p>\n" +
     "            </div>\n" +
-    "            <img id=\"doc5\" src=\"image/java-swing.jpg\">\n" +
+    "            <img class=\"docL\" src=\"image/java-swing.jpg\">\n" +
+    "            <div id=\"transitionPR4\"></div>\n"+
     "        </div>\n" +
     "        <div class=\"content\" id=\"block5\">\n" +
-    "            <img src=\"image/HtmlCssJs.png\">\n" +
+    "            <img class=\"docR\" src=\"image/HtmlCssJs.png\">\n" +
     "            <div class=\"left\">\n" +
-    "                <h3 onclick=\"workshop(6)\">Atelier 5</h3>\n" +
-    "                <p>Mise en place d'un site vitrine afin de présenter plus en détails le projet, ses membres, et pour les contacter.</p>\n" +
+    "                <h3 onclick=\"workshop(6)\">ATELIER 5</h3>\n" +
+    "                <p>Mise en place d'un site vitrine afin de <br> présenter plus en détails le projet, <br> ses membres, et pour les contacter.</p>\n" +
     "            </div>\n" +
+    "            <div id=\"transitionPR5\"></div>\n"+
     "        </div>\n" +
     "    </div>";
 
