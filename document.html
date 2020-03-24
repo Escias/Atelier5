@@ -44,63 +44,63 @@
     <section>
         <article>
             <pre class="code"><code class="codecolor">
-                protected void Window() throws SQLException {
-                    Connection co = DriverManager.getConnection("jdbc:mysql://l...);
-                    window.setTitle("Javadomo");
-                    window.setSize(1000,600);
-                    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-                    panel.setLayout(new BorderLayout());
-                    win1.add(new JLabel("login"));
-                    win1.add(login);
-                    win2.add(new JLabel("password"));
+                <o>protected void</o> <y>Window</y>() <o>throws</o> SQLException {
+                    Connection co = DriverManager.getConnection(<g>"jdbc:mysql://l..."</g>);
+                    <pu>window</pu>.setTitle(<g>"Javadomo"</g>);
+                    <pu>window</pu>.setSize(<b>1000</b>, <b>600</b>);
+                    <pu>window</pu>.setDefaultCloseOperation(JFrame.<pu>EXIT_ON_CLOSE</pu>);
+                    <pu>panel</pu>.setLayout(<o>new</o> BorderLayout());
+                    <pu>win1</pu>.add(<o>new</o> JLabel(<g>"login"</g>));
+                    <pu>win1</pu>.add(<pu>login</pu>);
+                    <pu>win2</pu>.add(<o>new</o> JLabel(<g>"password"</g>));
                     ...
-                    wincol1.add(win1);
-                    wincol1.add(win2);
+                    <pu>wincol1</pu>.add(<pu>win1</pu>);
+                    <pu>wincol1</pu>.add(<pu>win2</pu>);
                     ...
-                    panel.add(wincol1, BorderLayout.WEST);
-                    panel.setOpaque(false);
-                    panel.setLayout(new FlowLayout());
-                    window.add(panel, BorderLayout.NORTH);
-                    createIni.Check(login, password);
-                    blog.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            try {
-                                infoUser = connectSLQ.ConnectSQL(login, password, co, check);
-                            } catch (SQLException ex) {
+                    <pu>panel</pu>.add(<pu>wincol1</pu>, BorderLayout.<pu>WEST</pu>);
+                    <pu>panel</pu>.setOpaque(<o>false</o>);
+                    <pu>panel</pu>.setLayout(<o>new</o> FlowLayout());
+                    <pu>window</pu>.add(<pu>panel</pu>, BorderLayout.<pu>NORTH</pu>);
+                    <pu>createIni</pu>.Check(<pu>login</pu>, <pu>password</pu>);
+                    <pu>blog</pu>.addActionListener(<gr>new ActionListener()</gr> {
+                        <y>@Override</y>
+                        <o>public void</o> <y>actionPerformed</y>(ActionEvent e) {
+                            <o>try</o> {
+                            <pu>infoUser</pu> = <pu>connectSQL</pu>.ConnectSQL(<pu>login</pu>, <pu>password</pu>, <pu>co</pu>, <pu>check</pu>);
+                            } <o>catch</o> (SQLException ex) {
                                 ex.printStackTrace();
                             }
-                            id = Integer.parseInt(infoUser[0]);
-                            role = infoUser[1];
-                            nolog = infoUser[2];
-                            lastname = infoUser[3];
-                            firstname = infoUser[4];
-                            mail = infoUser[5];
-                            phonenumber = infoUser[6];
-                            adre = infoUser[7];
-                            ZIP = infoUser[8];
-                            if(nolog == "fail"){
-                                win6.remove(label);
-                                win6.add(label);
-                                window.setVisible(true);
-                            }else{
-                                Menu(id, role, lastname, firstname, mail, phonenumber, adre, ZIP, co);
+                            <pu>id</pu> = Integer.parseInt(infoUser[0]);
+                            <pu>role</pu> = <pu>infoUser</pu>[<b>1</b>];
+                            <pu>nolog</pu> = <pu>infoUser</pu>[<b>2</b>];
+                            <pu>lastname</pu> = <pu>infoUser</pu>[<b>3</b>];
+                            <pu>firstname</pu> = <pu>infoUser</pu>[<b>4</b>];
+                            <pu>mail</pu> = <pu>infoUser</pu>[<b>5</b>];
+                            <pu>phonenumber</pu> = <pu>infoUser</pu>[<b>6</b>];
+                            <pu>adre</pu> = <pu>infoUser</pu>[<b>7</b>];
+                            <pu>ZIP</pu> = <pu>infoUser</pu>[<b>8</b>];
+                            <o>if</o>(<pu>nolog</pu> == <g>"fail"</g>){
+                                <pu>win6</pu>.remove(<pu>label</pu>);
+                                <pu>win6</pu>.add(<pu>label</pu>);
+                                <pu>window</pu>.setVisible(<o>true</o>);
+                            }<o>else</o>{
+                                Menu(<pu>id</pu>, <pu>role</pu>, <pu>lastname</pu>, <pu>firstname</pu>, <pu>mail</pu>, <pu>phonenumber</pu>, <pu>adre</pu>, <pu>ZIP</pu>, <pu>co</pu>);
                             }
                         }
                     });
-                    breg.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            Register(co);
+                    <pu>breg</pu>.addActionListener(<gr>new ActionListener()</gr> {
+                        <y>@Override</y>
+                        <o>public void</o> <y>actionPerformed</y>(ActionEvent e) {
+                            Register(<pu>co</pu>);
                         }
                     });
-                    bexit.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            window.dispose();
+                    <pu>bexit</pu>.addActionListener(<gr>new ActionListener()</gr> {
+                        <y>@Override</y>
+                        <o>public void</o> <y>actionPerformed</y>(ActionEvent e) {
+                            <pu>window</pu>.dispose();
                         }
                     });
-                    window.setVisible(true);
+                    <pu>window</pu>.setVisible(<o>true</o>);
                 }
             </code></pre>
             <h3 class="detail">La fonction <u>Window()</u> gère la connection à la base de données, ainsi que celle de l'utilisateur, et la création de la fenêtre.<br>
@@ -113,25 +113,26 @@
             La variable <u>nolog</u> permet de vérifier si les informations entrées sont correcte, et si elles le sont, la fonction <u>Menu</u> est appelée.</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                public String[] ConnectSQL(JTextField login, JPasswordField password, Connection co, JCheckBox check) throws SQLException {
-                    String request = "SELECT user_id, user_type, user_lastname, user_firstname, user_mail, user_phone, user_adress, user_ZIP FROM personal_user WHERE '" + login.getText() + "' = personal_user.user_mail AND '" + password.getText() + "' = personal_user.user_password;";
+                <o>public</o> String[] <y>ConnectSQL</y>(JTextField login, JPasswordField password, Connection co, JCheckBox check) <o>throws</o> SQLException {
+                    String request = <g>"SELECT user_id, user_type, user_lastname, user_firstname, user_mail, user_phone, user_adress, user_ZIP FROM personal_user WHERE '"</g> +
+                                        login.getText() + <g>"' = personal_user.user_mail AND '"</g> + password.getText() + <g>"' = personal_user.user_password;"</g>;
                     Statement stm = co.createStatement();
                     ResultSet rslt = stm.executeQuery(request);
-                    if(rslt.next()){
-                        infoUser[0] = rslt.getString(1);
-                        infoUser[1] = rslt.getString(2);
-                        infoUser[2] = "nolog";
-                        infoUser[3] = rslt.getString(3);
-                        infoUser[4] = rslt.getString(4);
-                        infoUser[5] = rslt.getString(5);
-                        infoUser[6] = rslt.getString(6);
-                        infoUser[7] = rslt.getString(7);
-                        infoUser[8] = rslt.getString(8);
-                        createIni.CreateIni(login, password, check);
-                    }else{
-                        infoUser[2] = "fail";
+                    <o>if</o>(rslt.next()){
+                        <pu>infoUser</pu>[<b>0</b>] = rslt.getString(<b>1</b>);
+                        <pu>infoUser</pu>[<b>1</b>] = rslt.getString(<b>2</b>);
+                        <pu>infoUser</pu>[<b>2</b>] = <g>"nolog"</g>;
+                        <pu>infoUser</pu>[<b>3</b>] = rslt.getString(<b>3</b>);
+                        <pu>infoUser</pu>[<b>4</b>] = rslt.getString(<b>4</b>);
+                        <pu>infoUser</pu>[<b>5</b>] = rslt.getString(<b>5</b>);
+                        <pu>infoUser</pu>[<b>6</b>] = rslt.getString(<b>6</b>);
+                        <pu>infoUser</pu>[<b>7</b>] = rslt.getString(<b>7</b>);
+                        <pu>infoUser</pu>[<b>8</b>] = rslt.getString(<b>8</b>);
+                        <pu>createIni</pu>.CreateIni(<pu>login</pu>, <pu>password</pu>, <pu>check</pu>);
+                    }<o>else</o>{
+                        <pu>infoUser</pu>[<b>2</b>] = <g>"fail"</g>;
                     }
-                    return infoUser;
+                    <o>return</o> <pu>infoUser</pu>;
                 }
             </code></pre>
             <h3 class="detail">La fonction <u>ConnectSQL</u> éxecute une requête SQL, récupère les données dans une liste, et retourne cette dernière<br>
@@ -140,27 +141,30 @@
             <u>infoUser</u> est une liste qui récupère les résultat de la recherche.<br></h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                public String Register(JTextField addlname, JTextField addfname, JTextField addlog, JPasswordField addpass, JPasswordField repass, JTextField address, JTextField zip, JTextField phone, Connection co) throws SQLException {
-                    check = true;
-                    if (check == true){
-                        if (addlname.getText().length() == 0 || addfname.getText().length() == 0 || addlog.getText().length() == 0 || addpass.getText().length() == 0 || repass.getText().length() == 0 || address.getText().length() == 0 || zip.getText().length() == 0 || phone.getText().length() == 0){
-                            val = "Complete all info";
-                            check = false;
+                <o>public</o> String <y>Register</y>(JTextField addlname, JTextField addfname, JTextField addlog, JPasswordField addpass, JPasswordField repass, JTextField address, JTextField zip,
+                                        JTextField phone, Connection co) throws SQLException {
+                    <pu>check</pu> = <o>true</o>;
+                    <o>if</o> (<pu>check</pu> == <o>true</o>){
+                        <o>if</o> (addlname.getText().length() == <b>0</b> || addfname.getText().length() == <b>0</b> || addlog.getText().length() == <b>0</b> || addpass.getText().length() == <b>0</b> ||
+                            repass.getText().length() == <b>0</b> || address.getText().length() == <b>0</b> || zip.getText().length() == <b>0</b> || phone.getText().length() == <b>0</b>){
+                            <pu>val</pu> = <g>"Complete all info"</g>;
+                            <pu>check</pu> = <o>false</o>;
                         }
                     }
-                    if (check == true){
-                        if (Arrays.equals(addpass.getPassword(), repass.getPassword())){
-                            String request = "INSERT INTO personal_user (user_lastname, user_firstname, user_mail, user_password, user_adress, user_ZIP, user_phone, user_type) " +
-                                    "VALUES ('" + addlname.getText() + "', '" + addfname.getText() + "', '" + addlog.getText() + "', '" + addpass.getText() + "', '" + address.getText() + "', '" + zip.getText() + "', '" + phone.getText() + "', 'normal')";
+                    <o>if</o> (<pu>check</pu> == <o>true</o>){
+                        <o>if</o> (Arrays.equals(addpass.getPassword(), repass.getPassword())){
+                            String request = <g>"INSERT INTO personal_user (user_lastname, user_firstname, user_mail, user_password, user_adress, user_ZIP, user_phone, user_type) "</g> +
+                                    <g>"VALUES ('"</g> + addlname.getText() + <g>"', '"</g> + addfname.getText() + <g>"', '"</g> + addlog.getText() + <g>"', '"</g> + addpass.getText() + <g>"', '"</g> + address.getText() +
+                                                <g>"', '"</g> + zip.getText() + <g>"', '"</g> + phone.getText() + <g>"', 'normal')"</g>;
                             Statement stm = co.createStatement();
                             stm.executeUpdate(request);
-                            val = "ok";
+                            <pu>val</pu> = <g>"ok"</g>;
                         }
-                        else{
-                            val = "Wrong password";
+                        <o>else</o>{
+                            <pu>val</pu> = <g>"Wrong password"</g>;
                         }
                     }
-                    return val;
+                    <o>return</o> <pu>val</pu>;
                 }
             </code></pre>
             <h3 class="detail">La fonction <u>Register()</u> récupère les informations entrées dans les <u>JTextField</u> et les <u>JPasswordField</u> et les enregistre dans la base de données.<br>
@@ -169,79 +173,78 @@
             La requête SQL <u>request</u> est une requête d'insertion, où on récupère les informations entrées dans les zones de texte, et les intègre dans la requête.</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                private void InsertItem (int id, String role, String lastname, String firstname, String mail, String phonenumber, String adre, String ZIP, Connection co){
-                    RemoveCenter();
-                    center1.add(scrollad);
-                    DefaultTableModel aModel = (DefaultTableModel) tableAdd.getModel();
-                    aModel.setColumnIdentifiers(column);
-                    tableAdd.setModel(aModel);
-                    paneAdd = new JScrollPane(tableAdd);
-                    paneAdd.setSize(5, 10);
-                    center2.add(paneAdd);
+                <o>private void</o> <y>InsertItem</y> (<o>int</o> id, String role, String lastname, String firstname, String mail, String phonenumber, String adre, String ZIP, Connection co){
+                    <pu>center1</pu>.add(<pu>scrollad</pu>);
+                    DefaultTableModel aModel = (DefaultTableModel) <pu>tableAdd</pu>.getModel();
+                    aModel.setColumnIdentifiers(<pu>column</pu>);
+                    <pu>tableAdd</pu>.setModel(aModel);
+                    <pu>paneAdd</pu> = <o>new</o> JScrollPane(<pu>tableAdd</pu>);
+                    <pu>paneAdd</pu>.setSize(<b>5</b>, <b>10</b>);
+                    <pu>center2</pu>.add(<pu>paneAdd</pu>);
                     ...
-                    centercol.add(center1);
+                    <pu>centercol</pu>.add(<pu>center1</pu>);
                     ...
-                    pcenter.add(centercol);
-                    pcontent.add(pcenter, BorderLayout.CENTER);
-                    pcontent.revalidate();
-                    pcontent.repaint();
-                    window.revalidate();
-                    window.repaint();
-                    scrollad.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            table = scrollad.getSelectedIndex();
-                            obj1 = table;
-                            table = scrollad.getSelectedIndex();
-                            center1.removeAll();
-                            center2.removeAll();
-                            center1.add(scrollad);
-                            try {
-                                column = AddOption(id, co, role, table);
-                            } catch (SQLException ex) {
+                    <pu>pcenter</pu>.add(<pu>centercol</pu>);
+                    <pu>pcontent</pu>.add(<pu>pcenter</pu>, BorderLayout.<pu>CENTER</pu>);
+                    <pu>pcontent</pu>.revalidate();
+                    <pu>pcontent</pu>.repaint();
+                    <pu>window</pu>.revalidate();
+                    <pu>window</pu>.repaint();
+                    <pu>scrollad</pu>.addActionListener(<gr>new ActionListener()</gr> {
+                        <y>@Override</y>
+                        <o>public void</o> <y>actionPerformed</y>(ActionEvent e) {
+                            <pu>table</pu> = <pu>scrollad</pu>.getSelectedIndex();
+                            <pu>obj1</pu> = <pu>table</pu>;
+                            <pu>table</pu> = <pu>scrollad</pu>.getSelectedIndex();
+                            <pu>center1</pu>.removeAll();
+                            <pu>center2</pu>.removeAll();
+                            <pu>center1</pu>.add(<pu>scrollad</pu>);
+                            <o>try</o> {
+                                <pu>column</pu> = AddOption(<pu>id</pu>, <pu>co</pu>, <pu>role</pu>, <pu>table</pu>);
+                            } <o>catch</o> (SQLException ex) {
                                 ex.printStackTrace();
                             }
-                            DefaultTableModel aModel = (DefaultTableModel) tableAdd.getModel();
-                            aModel.setColumnIdentifiers(column);
-                            tableAdd.setModel(aModel);
-                            paneAdd = new JScrollPane(tableAdd);
-                            paneAdd.setSize(5, 10);
-                            if (obj1.equals(0) || obj1.equals(1) || obj1.equals(3) || obj1.equals(4) || obj1.equals(5) || obj1.equals(7) || obj1.equals(8) || obj1.equals(9)){
-                                center2.add(paneAdd);
+                            DefaultTableModel aModel = (DefaultTableModel) <pu>tableAdd</pu>.getModel();
+                            aModel.setColumnIdentifiers(<pu>column</pu>);
+                            <pu>tableAdd</pu>.setModel(aModel);
+                            <pu>paneAdd</pu> = new JScrollPane(<pu>tableAdd</pu>);
+                            <pu>paneAdd</pu>.setSize(<b>5</b>, <b>10</b>);
+                            <o>if</o> (<pu>obj1</pu>.equals(<b>0</b>) || <pu>obj1</pu>.equals(<b>1</b>) || <pu>obj1</pu>.equals(<b>3</b>) || <pu>obj1</pu>.equals(<b>4</b>) || <pu>obj1</pu>.equals(<b>5</b>) || <pu>obj1</pu>.equals(<b>7</b>) || <pu>obj1</pu>.equals(<b>8</b>) || <pu>obj1</pu>.equals(<b>9</b>)){
+                                <pu>center2</pu>.add(<pu>paneAdd</pu>);
                             }
-                            center1.add(baddnewitem);
-                            center1.revalidate();
-                            center1.repaint();
+                            <pu>center1</pu>.add(<pu>baddnewitem</pu>);
+                            <pu>center1</pu>.revalidate();
+                            <pu>center1</pu>.repaint();
                             ...
                         }
                     });
-                    baddnewitem.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            table = scrollad.getSelectedIndex();
-                            orderby = ListScroll.getSelectedIndex();
-                            selection1 = AddScroll.getSelectedIndex() + 1;
-                            selection2 = AddPlusScroll.getSelectedIndex() + 1;
-                            selection3 = therm1.getSelectedIndex() + 1;
-                            selection4 = therm2.getSelectedIndex() + 1;
-                            row = tablist.getSelectedRow();
-                            try {
-                                request.Insert(id, role, co, table, tableAdd, selection1, selection2, selection3, selection4);
-                            } catch (SQLException ex) {
+                    <pu>baddnewitem</pu>.addActionListener(<gr>new ActionListener()</gr> {
+                        <y>@Override</y>
+                        <o>public void</o> <y>actionPerformed</y>(ActionEvent e) {
+                            <pu>table</pu> = <pu>scrollad</pu>.getSelectedIndex();
+                            <pu>orderby</pu> = <pu>ListScroll</pu>.getSelectedIndex();
+                            <pu>selection1</pu> = <pu>AddScroll</pu>.getSelectedIndex() + <b>1</b>;
+                            <pu>selection2</pu> = <pu>AddPlusScroll</pu>.getSelectedIndex() + <b>1</b>;
+                            <pu>selection3</pu> = <pu>therm1</pu>.getSelectedIndex() + <b>1</b>;
+                            <pu>selection4</pu> = <pu>therm2</pu>.getSelectedIndex() + <b>1</b>;
+                            <pu>row</pu> = <pu>tablist</pu>.getSelectedRow();
+                            <o>try</o> {
+                                <pu>request</pu>.Insert(<pu>id</pu>, <pu>role</pu>, <pu>co</pu>, <pu>table</pu>, <pu>tableAdd</pu>, <pu>selection1</pu>, <pu>selection2</pu>, <pu>selection3</pu>, <pu>selection4</pu>);
+                            } <o>catch</o> (SQLException ex) {
                                 ex.printStackTrace();
                             }
 
                         }
                     });
-                    bre2.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            Management(id, role, lastname, firstname, mail, phonenumber, adre, ZIP, co);
+                    <pu>bre2</pu>.addActionListener(<gr>new ActionListener()</gr> {
+                        <y>@Override</y>
+                        <o>public void</o> <y>actionPerformed</y>(ActionEvent e) {
+                            Management(<pu>id</pu>, <pu>role</pu>, <pu>lastname</pu>, <pu>firstname</pu>, <pu>mail</pu>, <pu>phonenumber</pu>, <pu>adre</pu>, <pu>ZIP</pu>, <pu>co</pu>);
                         }
                     });
-                    window.revalidate();
-                    window.repaint();
-                    window.setVisible(true);
+                    <pu>window</pu>.revalidate();
+                    <pu>window</pu>.repaint();
+                    <pu>window</pu>.setVisible(<o>true</o>);
                 }
             </code></pre>
             <h3 class="detail">Cette fonction <u>InsertItem</u>, comme plusieurs autres, gère les modification effectuer sur la base de données.
@@ -254,20 +257,20 @@
             (La classe <u>Request</u>, et donc toute ses fonction ne sert qu'à rediriger vers les classes correspondante)</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                private void DelOption(int table, Connection co, int orderby){
-                    switch (table){
-                        case 0:
-                            tablist = ampConnect.Request(co, orderby);
-                            DisplayTable(tablist);
-                            center2.removeAll();
-                            center2.add(DTable);
-                            break;
-                        case 1:
-                            tablist = camInstall.Request(co, orderby);
-                            DisplayTable(tablist);
-                            center2.removeAll();
-                            center2.add(DTable);
-                            break;
+                <o>private void</o> <y>DelOption</y>(int table, Connection co, <o>int</o> orderby){
+                    <o>switch</o> (table){
+                        <o>case</o> <b>0</b>:
+                            <pu>tablist</pu> = <pu>ampConnect</pu>.Request(co, orderby);
+                            DisplayTable(<pu>tablist</pu>);
+                            <pu>center2</pu>.removeAll();
+                            <pu>center2</pu>.add(<pu>DTable</pu>);
+                            <o>break</o>;
+                        <o>case</o> <b>1</b>:
+                            <pu>tablist</pu> = <pu>camInstall</pu>.Request(co, orderby);
+                            DisplayTable(<pu>tablist</pu>);
+                            <pu>center2</pu>.removeAll();
+                            <pu>center2</pu>.add(<pu>DTable</pu>);
+                            <o>break</o>;
                         ...
                     }
                 }
@@ -277,32 +280,32 @@
             <u>.removeAll()</u> retire tout les éléments du conteneur <u>center2</u>.</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                private void DisplayTable(JTable tablist){
-                    DTable = new JScrollPane(tablist);
-                    center2.add(DTable);
-                    centercol.add(center2);
-                    pcontent.revalidate();
-                    pcontent.repaint();
-                    window.revalidate();
-                    window.repaint();
-                    window.setVisible(true);
+                <o>private void</o> <y>DisplayTable</y>(JTable tablist){
+                    <pu>DTable</pu> = <o>new</o> JScrollPane(tablist);
+                    <pu>center2</pu>.add(<pu>DTable</pu>);
+                    <pu>centercol</pu>.add(<pu>center2</pu>);
+                    <pu>pcontent</pu>.revalidate();
+                    <pu>pcontent</pu>.repaint();
+                    <pu>window</pu>.revalidate();
+                    <pu>window</pu>.repaint();
+                    <pu>window</pu>.setVisible(<o>true</o>);
                 }
             </code></pre>
             <h3 class="detail">La fonction <u>DisplayTable</u> recupère le tableau <u>tablist</u> et l'inclus dans le <u>JScrollPane</u> <u>DTable</u>.<br>
             <u>revalidate</u> et <u>repaint</u> permettent de mettre à jours le contenue l'affichage des conteneurs.</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                public void Insert(String value1, String value2, int selection1, int selection2, Connection co) throws SQLException {
+                <o>public void</o> <y>Insert</y>(String value1, String value2, <o>int</o> selection1, <o>int</o> selection2, Connection co) <o>throws</o> SQLException {
                     Integer obj1 = selection2;
-                    if (obj1.equals(1)){
-                        stat = "on";
-                    }else if (obj1.equals(2)){
-                        stat = "off";
-                    }else if (obj1.equals(3)){
-                        stat = "scheduled";
+                    <o>if</o> (obj1.equals(<b>1</b>)){
+                        <pu>stat</pu> = <g>"on"</g>;
+                    }<o>else if</o> (obj1.equals(<b>2</b>)){
+                        <pu>stat</pu> = <g>"off"</g>;
+                    }<o>else if</o> (obj1.equals(<b>3</b>)){
+                        <pu>stat</pu> = <g>"scheduled"</g>;
                     }
-                    String request = "INSERT INTO ampconnect (amp_name, amp_room_id, amp_status, amp_color, amp_time_on, amp_time_off) " +
-                                "VALUES ('"+value1+"', '"+selection1+"', '"+stat+"', '"+value2+"', NOW(), NOW() + INTERVAL 5 HOUR)";
+                    String request = <g>"INSERT INTO ampconnect (amp_name, amp_room_id, amp_status, amp_color, amp_time_on, amp_time_off) "</g> +
+                                <g>"VALUES ('"</g>+value1+<g>"', '"</g>+selection1+<g>"', '"</g>+stat+<g>"', '"</g>+value2+<g>"', NOW(), NOW() + INTERVAL 5 HOUR)"</g>;
                     Statement stm = co.createStatement();
                     stm.executeUpdate(request);
                 }
@@ -312,28 +315,28 @@
             les condition <u>if</u> permettent de définir le contenu de la variable <u>stat</u> dépendant les choix effectuer dans les <u>JComboBox</u> (présent par exemple dans la fonction <u>InsertItem</u>).</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                public JTable Tab(Connection co, String[] t, String req) {
-                    JTable table = new JTable();
+                <o>public</o> JTable <y>Tab</y>(Connection co, String[] t, String req) {
+                    JTable table = <o>new</o> JTable();
                     DefaultTableModel aModel = (DefaultTableModel) table.getModel();
                     aModel.setColumnIdentifiers(t);
                     String request = req;
-                    try {
+                    <o>try</o> {
                         Statement statement = co.createStatement();
                         ResultSet results = statement.executeQuery(request);
                         ResultSetMetaData meta = results.getMetaData();
-                        int colCount = meta.getColumnCount();
-                        while (results.next()) {
-                            Object[] objects = new Object[colCount];
-                            for(int i = 0; i < colCount; i++) {
-                                objects[i] = results.getObject(i+1);
+                        <o>int</o> colCount = meta.getColumnCount();
+                        <o>while</o> (results.next()) {
+                            Object[] objects = <o>new</o> Object[colCount];
+                            <o>for</o>(int i = <b>0</b>; i < colCount; i++) {
+                                objects[i] = results.getObject(i+<b>1</b>);
                             }
                             aModel.addRow(objects);
                         }
                         table.setModel(aModel);
-                    } catch (SQLException e) {
+                    } <o>catch</o> (SQLException e) {
                         e.printStackTrace();
                     }
-                    return table;
+                    <o>return</o> table;
                 }
             </code></pre>
             <h3 class="detail">La fonction <u>Tab</u> génère un tableau <u>JTable</u> et le retourne.<br>
@@ -342,19 +345,19 @@
             Le nombre d'éléments de chaque ligne du tableau dépand du nombre de colonnes, définie par <u>getColumnCount()</u>, qui lui dépand de <u>t</u>.</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                public void CreateIni(JTextField username, JPasswordField password, JCheckBox check){
-                    try {
-                        if(check.isSelected()){
-                            file.createNewFile();
-                            Wini ini = new Wini(file);
-                            ini.put("Identifiant", "mail", username.getText());
-                            ini.put("Identifiant", "password", password.getText());
+                <o>public void</o> <y>CreateIni</y>(JTextField username, JPasswordField password, JCheckBox check){
+                    <y>try</y> {
+                        <y>if</y>(check.isSelected()){
+                            <pu>file</pu>.createNewFile();
+                            Wini ini = <o>new</o> Wini(<pu>file</pu>);
+                            ini.put(<g>"Identifiant"</g>, <g>"mail"</g>, username.getText());
+                            ini.put(<g>"Identifiant"</g>, <g>"password"</g>, password.getText());
                             ini.store();
                         }
-                        else{
-                            file.delete();
+                        <o>else</o>{
+                            <pu>file</pu>.delete();
                         }
-                    }catch (IOException e){
+                    }<o>catch</o> (IOException e){
                         e.printStackTrace();
                     }
                 }
@@ -365,15 +368,15 @@
             Mais si la <u>CheckBox</u> n'est pas sélectionner, le fichier est alors effacer.</h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                public void Check(JTextField username, JPasswordField password) {
-                    if (file.exists()) {
-                        try {
-                            Wini ini = new Wini(file);
-                            String stringMail = ini.get("Identifiant", "mail");
-                            String stringPassword = ini.get("Identifiant", "password");
+                <o>public void</o> <y>Check</y>(JTextField username, JPasswordField password) {
+                    <o>if</o> (<pu>file</pu>.exists()) {
+                        <o>try</o> {
+                            Wini ini = <o>new</o> Wini(<pu>file</pu>);
+                            String stringMail = ini.get(<g>"Identifiant"</g>, <g>"mail"</g>);
+                            String stringPassword = ini.get(<g>"Identifiant"</g>, <g>"password"</g>);
                             username.setText(stringMail);
                             password.setText(stringPassword);
-                        } catch (IOException e) {
+                        } <o>catch</o> (IOException e) {
                             e.printStackTrace();
                         }
                     }
