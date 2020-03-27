@@ -267,10 +267,16 @@ a:hover {
     border-bottom-right-radius: 35px;
     background-color: white;
     font-size: 100%;
+    box-shadow: 0 5px lightgrey;
     color: black;
 }
 .download:hover{
     text-decoration-line: none;
+}
+.download:active{
+    text-decoration-line: none;
+    transform: translateY(3px);
+    box-shadow: 0 2px lightgrey;
 }
 .section{
     padding-top: 3%;
