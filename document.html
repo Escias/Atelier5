@@ -114,8 +114,7 @@
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
                 <o>public</o> String[] <y>ConnectSQL</y>(JTextField login, JPasswordField password, Connection co, JCheckBox check) <o>throws</o> SQLException {
-                    String request = <g>"SELECT user_id, user_type, user_lastname, user_firstname, user_mail, user_phone, user_adress, user_ZIP FROM personal_user WHERE '"</g> +
-                                        login.getText() + <g>"' = personal_user.user_mail AND '"</g> + password.getText() + <g>"' = personal_user.user_password;"</g>;
+                    String request = <g>"SELECT user_id, user_type, user_lastname, user_firstname, user_mail, user_phone, user_adress, user_ZIP FROM personal_user WHERE '"</g> + login.getText() + <g>"' = personal_user.user_mail AND '"</g> + password.getText() + <g>"' = personal_user.user_password;"</g>;
                     Statement stm = co.createStatement();
                     ResultSet rslt = stm.executeQuery(request);
                     <o>if</o>(rslt.next()){
@@ -141,12 +140,10 @@
             <u>infoUser</u> est une liste qui récupère les résultat de la recherche.<br></h3>
             <div class="sep"></div>
             <pre class="code"><code class="codecolor">
-                <o>public</o> String <y>Register</y>(JTextField addlname, JTextField addfname, JTextField addlog, JPasswordField addpass, JPasswordField repass, JTextField address, JTextField zip,
-                                        JTextField phone, Connection co) throws SQLException {
+                <o>public</o> String <y>Register</y>(JTextField addlname, JTextField addfname, JTextField addlog, JPasswordField addpass, JPasswordField repass, JTextField address, JTextField zip, JTextField phone, Connection co) throws SQLException {
                     <pu>check</pu> = <o>true</o>;
                     <o>if</o> (<pu>check</pu> == <o>true</o>){
-                        <o>if</o> (addlname.getText().length() == <b>0</b> || addfname.getText().length() == <b>0</b> || addlog.getText().length() == <b>0</b> || addpass.getText().length() == <b>0</b> ||
-                            repass.getText().length() == <b>0</b> || address.getText().length() == <b>0</b> || zip.getText().length() == <b>0</b> || phone.getText().length() == <b>0</b>){
+                        <o>if</o> (addlname.getText().length() == <b>0</b> || addfname.getText().length() == <b>0</b> || addlog.getText().length() == <b>0</b> || addpass.getText().length() == <b>0</b> || repass.getText().length() == <b>0</b> || address.getText().length() == <b>0</b> || zip.getText().length() == <b>0</b> || phone.getText().length() == <b>0</b>){
                             <pu>val</pu> = <g>"Complete all info"</g>;
                             <pu>check</pu> = <o>false</o>;
                         }
@@ -154,8 +151,7 @@
                     <o>if</o> (<pu>check</pu> == <o>true</o>){
                         <o>if</o> (Arrays.equals(addpass.getPassword(), repass.getPassword())){
                             String request = <g>"INSERT INTO personal_user (user_lastname, user_firstname, user_mail, user_password, user_adress, user_ZIP, user_phone, user_type) "</g> +
-                                    <g>"VALUES ('"</g> + addlname.getText() + <g>"', '"</g> + addfname.getText() + <g>"', '"</g> + addlog.getText() + <g>"', '"</g> + addpass.getText() + <g>"', '"</g> + address.getText() +
-                                                <g>"', '"</g> + zip.getText() + <g>"', '"</g> + phone.getText() + <g>"', 'normal')"</g>;
+                                            <g>"VALUES ('"</g> + addlname.getText() + <g>"', '"</g> + addfname.getText() + <g>"', '"</g> + addlog.getText() + <g>"', '"</g> + addpass.getText() + <g>"', '"</g> + address.getText() + <g>"', '"</g> + zip.getText() + <g>"', '"</g> + phone.getText() + <g>"', 'normal')"</g>;
                             Statement stm = co.createStatement();
                             stm.executeUpdate(request);
                             <pu>val</pu> = <g>"ok"</g>;
